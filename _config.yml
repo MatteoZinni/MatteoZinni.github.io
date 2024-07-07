@@ -1,8 +1,8 @@
 # Site settings
-title: Spectral
+title: The Pond
 email: youremailaddress@gmail.com
 description: The Jekyll version of the Spectral theme by HTML5 UP.
-baseurl: "/spectral-jekyll-theme" # the subpath of your site, e.g. /blog
+baseurl: "/MatteoZinni.github.io" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
 # Homepage tiles
@@ -17,7 +17,7 @@ featured-image-source:
 facebook_url:
 github_url:
 gitlab_url: https://gitlab.com/u/andrewbanchich
-googleplus_url: https://plus.google.com/u/0/+AndrewBanchich
+googleplus_url: 
 instagram_url:
 linkedin_url: https://www.linkedin.com/in/andrew-banchich-a4ba1195
 pinterest_url:
