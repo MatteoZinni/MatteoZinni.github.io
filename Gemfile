@@ -1,8 +1,8 @@
+
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.2.1"
-gem "jekyll-sitemap"
-gem "jekyll-gist"
-gem 'jekyll-mentions'
-gem 'jekyll-feed'
-gem 'jekyll-paginate'
+# Questo pacchetto contiene Jekyll + plugin ufficiali supportati da GitHub Pages
+gem "github-pages", group: :jekyll_plugins
+
+# Necessario per alcune versioni di kramdown su Ruby 3+
+gem "rexml"
