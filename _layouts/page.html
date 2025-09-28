@@ -1,32 +1,55 @@
 <!DOCTYPE HTML>
 <!--
-	Spectral by HTML5 UP
+	Massively by HTML5 UP
 	html5up.net | @ajlkn
+  Jekyll integration by somiibo.com
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-{% include head.html %}
+	<head>
+    {% include head.html %}
+	</head>
+	<body class="is-loading">
 
-<body>
-    {% include header.html %}
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
 
-    <!-- Main -->
-    <article id="main">
-        <header{% if page.image %} style="background-image: url('{% if site.featured-image-source %}{{ page.image | prepend: site.featured-image-source | absolute_url }}{% else %}{{ "" | absolute_url }}/assets/images/{{ page.image }}{% endif %}');"{% endif %}>
-            <h2>{{ page.title }}</h2>
-            <p>{{ page.description }}</p>
-        </header>
-        <section class="wrapper style5">
-            <div class="inner">
+				<!-- Header -->
+				<header id="header">
+					<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
+				</header>
 
-                {{ content }}
+				<!-- Nav -->
+					<nav id="nav">
 
-            </div>
-        </section>
-    </article>
+            {% include nav.html %}
 
-    {% include footer.html %}
+					</nav>
 
-</body>
+				<!-- Main -->
+				<div id="main">
 
+					<!-- Post -->
+					<section class="post">
+						<p>{{content}}</p>
+					</section>
+
+					<!-- Footer -->
+						<footer>
+              <ul class="actions">
+								<li><a href="{{ "/blog/" | absolute_url }}" class="button">Our Blog</a></li>
+              </ul>
+						</footer>
+					</div>
+
+				<!-- Footer -->
+        {% include foot.html %}
+
+			</div>
+
+			<!-- Scripts -->
+			{% include scripts-main.html %}
+			{% include tracking.html %}
+
+	</body>
 </html>
